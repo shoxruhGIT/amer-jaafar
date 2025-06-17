@@ -5,15 +5,9 @@ import Footer from "./components/footer";
 
 const Layout = () => {
   return (
-    <main
-      className="w-full h-auto bg-[#070809]"
-      // style={{
-      //   background:
-      //     "linear-gradient(0deg, #0C0D0F, #0C0D0F), linear-gradient(0deg, #070809, #070809)",
-      // }}
-    >
+    <main className="w-full h-auto bg-[#070809]">
       <Navbar />
-      <section className="flex-1 mt-[120px] pb-[120px]">
+      <section className="flex-1 mt-[120px] pb-20">
         <Outlet />
       </section>
       <Footer />

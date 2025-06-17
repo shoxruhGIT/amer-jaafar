@@ -6,6 +6,7 @@ import AboutPage from "./pages/about-page";
 import BlogPage from "./pages/blog-page";
 import BlogDetailsPage from "./pages/blog-details-page";
 import ContactPage from "./pages/contact-page";
+import PageNotFound from "./components/page-not-found";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:id" element={<BlogDetailsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>
   );
